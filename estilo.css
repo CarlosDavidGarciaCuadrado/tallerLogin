@@ -1,0 +1,123 @@
+
+#contenedor{
+    position: relative;
+    width: 65%;
+    height: 100%;
+    background: rgb(177, 134, 245);
+    display: block;
+    border-radius: 15px;
+}
+
+header{
+    background-color: #ddd;
+}
+
+input{
+    display:inline;
+    width: 35%;
+    height: 25px;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 15px;
+    margin: 20px;
+}
+
+select{
+    width: 30%;
+    height: 30px;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 15px;
+    margin: 20px;
+}
+
+.contenidito{
+    width: 35%;
+    height: 25px;
+    margin: 20px;  
+    display: inline;
+}
+button{
+    width: 80%;
+    height: 30px;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    background-color: rgb(36, 148, 247);
+}
+
+.imagen {
+  width: 60%;
+  height: 10px;
+}
+
+.valor-desplegable {
+    display: none;
+    position: relative;
+    width: 200px;
+    height: 25px;
+    overflow: hidden;
+  }
+  
+  .valor-desplegable:hover  {
+    overflow: visible;
+  }
+  
+  .valor-desplegable .valorTexto {
+    width: 200px;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 4px;
+    background: white;
+    border: 1px solid #ddd;
+    position: relative;
+    box-sizing: border-box;
+    color: #222;
+  }
+  
+  .valor-desplegable .valorTexto::after {
+    content: "\25BF";
+    position: absolute;
+    right: 4px;
+    color: #222 !important;
+    display: inline-block;
+  }
+  
+  .valor-desplegable > ul,
+  .valor-desplegable > ul > li > ul {
+    list-style: none;
+    padding-left: 0;
+    position: absolute;
+    top: 24px;
+    border: 1px solid #ddd;
+    width: 200px;
+    margin-top: 0;
+    box-sizing: border-box;
+    background: white;
+  }
+  
+  .valor-desplegable li {
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 4px;
+    border-bottom: 1px solid #f5f5f5;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .valor-desplegable li:hover {
+    overflow: visible;
+    background: #f8f8f8;
+  }
+  
+  .valor-desplegable > ul > li > ul {
+    top: -1px;
+    left: 198px;
+  }
+  
+  .valor-desplegable > ul > li > ul::before {
+    content:"\25B9";
+    position: absolute;
+    left: -15px;
+  }
